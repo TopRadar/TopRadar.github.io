@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
+    <script src="https://api4.windy.com/assets/libBoot.js"></script>
+    <style>
+  		#windy {
+  			width: 100%;
+  			height: 100%;
+  		}
+  		* {
+            margin: 0;
+            padding: 0;
+        }
+  	</style>
+</head>
+<body>
+<div id="windy"></div>
+<script>
+
+    const options = {
+
+                // Required: API key
+                key: 'jZ2obQNiA0H5UBktkFNwGySE4pALqzc1',
+
+                // Put additional console output
+                verbose: true,
+
+                // Optional: Initial state of the map
+                // lat: mylat,
+                // lon: mylng,
+                zoom: 7,
+        }
+
+    // Initialize Windy API
+    windyInit( options, windyAPI => {
+        // windyAPI is ready, and contain 'map', 'store',
+        // 'picker' and other usefull stuff
+
+        const { map } = windyAPI
+        // .map is instance of Leaflet map
+
+    })
+
+    </script>
+
+</body>
+</html>
